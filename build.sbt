@@ -25,6 +25,8 @@ libraryDependencies += "org.scala-stm" %% "scala-stm" % "0.7"
 
 libraryDependencies += "com.qifun" %% "haxe-scala-library" % "0.2.0" % HaxeJava classifier "haxe-java"
 
+crossScalaVersions := Seq("2.10.4", "2.11.2")
+
 organization := "com.qifun"
 
 name := "haxe-scala-stm"
