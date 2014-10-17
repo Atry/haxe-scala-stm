@@ -1,3 +1,7 @@
+import SonatypeKeys._
+
+sonatypeSettings
+
 haxeSettings
 
 haxeJavaSettings
@@ -29,7 +33,7 @@ organization := "com.qifun"
 
 name := "haxe-scala-stm"
 
-version := "0.1.0-SNAPSHOT"
+version := "0.1.0"
 
 homepage := Some(url(s"https://github.com/qifun/${name.value}"))
 
