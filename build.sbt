@@ -31,7 +31,7 @@ organization := "com.qifun"
 
 name := "haxe-scala-stm"
 
-version := "0.1.2-SNAPSHOT"
+version := "0.1.2"
 
 homepage := Some(url(s"https://github.com/qifun/${name.value}"))
 
