@@ -10,8 +10,7 @@ for (c <- Seq(Compile, Test)) yield {
 for (c <- Seq(Compile, Test)) yield {
   haxeOptions in c ++=
     Seq(
-      "-D", "no-root",
-      "-D", "json_stream_no_dot")
+      "-D", "no-root")
 }
 
 haxeOptions in Compile ++= Seq("-dce", "no")
