@@ -7,7 +7,7 @@ before_install:
  - travis_retry wget http://hxbuilds.s3-website-us-east-1.amazonaws.com/builds/haxe/linux64/haxe_latest.tar.gz
  - sudo tar zxvf haxe_latest.tar.gz
  - sudo mv haxe-* haxe
- - sudo export PATH=$PATH:./haxe
+ - export PATH=$PATH:./haxe
  - travis_retry sudo haxelib setup .haxelib
  - travis_retry sudo haxelib install nodejs
  - travis_retry sudo haxelib install hxjava
