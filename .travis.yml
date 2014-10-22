@@ -4,8 +4,9 @@ before_install:
  - travis_retry sudo add-apt-repository ppa:eyecreate/haxe -y
  - travis_retry sudo apt-get update -qq
  - travis_retry sudo apt-get install -qq neko ocaml mono-devel 
- - travis_retry wget http://hxbuilds.s3-website-us-east-1.amazonaws.com/builds/haxe/linux64/haxe_latest.tar.gz
- - sudo tar zxvf haxe_latest.tar.gz
+ - haxe_file=haxe_latest.tar.gz
+ - travis_retry wget http://hxbuilds.s3-website-us-east-1.amazonaws.com/builds/haxe/linux64/$haxe_latest
+ - sudo tar zxvf $haxe_latest
  - sudo mv haxe-* haxe
  - export PATH=$PATH:`pwd`/haxe
  - export HAXE_STD_PATH=`pwd`/haxe/std
