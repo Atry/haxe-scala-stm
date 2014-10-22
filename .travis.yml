@@ -8,7 +8,6 @@ before_install:
  - sudo tar zxvf haxe_latest.tar.gz
  - sudo mv haxe-* haxe
  - export PATH=$PATH:`pwd`/haxe
- - mkdir -p haxelib && haxelib setup ./haxelib
  - travis_retry haxelib setup .haxelib
  - travis_retry haxelib install nodejs
  - travis_retry haxelib install hxjava
