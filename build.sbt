@@ -21,7 +21,7 @@ javacOptions in Compile in compile += "-Xlint:-deprecation"
 
 libraryDependencies += "org.scala-stm" %% "scala-stm" % "0.7"
 
-libraryDependencies += "com.qifun" %% "haxe-scala-library" % "0.2.0" % HaxeJava classifier "haxe-java"
+libraryDependencies += "com.qifun" %% "haxe-scala-library" % "0.2.1" % HaxeJava classifier "haxe-java"
 
 crossScalaVersions := Seq("2.10.4", "2.11.2")
 
@@ -29,7 +29,7 @@ organization := "com.qifun"
 
 name := "haxe-scala-stm"
 
-version := "0.1.3-SNAPSHOT"
+version := "0.1.3"
 
 homepage := Some(url(s"https://github.com/qifun/${name.value}"))
 
