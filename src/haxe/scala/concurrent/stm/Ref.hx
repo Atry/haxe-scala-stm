@@ -20,9 +20,9 @@
 package scala.concurrent.stm;
 
 #if (java && scala)
-import haxe.Int64;
 import java.StdTypes;
 import scala.reflect.OptManifest;
+import haxe.Int64;
 
 extern interface Ref<A> extends scala.concurrent.stm.RefLike<A, scala.concurrent.stm.InTxn>
 {
