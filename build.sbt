@@ -1,7 +1,3 @@
-haxeSettings
-
-haxeJavaSettings
-
 for (c <- Seq(Compile, Test)) yield {
   haxeOptions in c ++=
     Seq("-D", "scala")
